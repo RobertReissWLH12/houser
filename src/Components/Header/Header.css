@@ -1,0 +1,27 @@
+header {
+    width: 100%;
+    background-color: #519872;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    height: 75px;
+    font-size: 30px;
+    font-weight: 700;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    margin-right: 400px;
+}
+
+.header-img {
+    margin-right: 11px;
+}
+
+.houser-logo {
+    display: flex;
+    position: fixed;
+}

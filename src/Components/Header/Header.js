@@ -1,4 +1,6 @@
 import React, {Component} from 'react'
+import "./Header.css"
+import houser_logo from "./houser_logo.jpg"
 
 export default class Header extends Component {
 
@@ -6,9 +8,12 @@ export default class Header extends Component {
 
     render() {
         return (
-            <div>
-                <p>Header</p>
+            <header>
+            <div className="header">
+            <img src={houser_logo} className="houser_logo" alt="" />
+                Houser
             </div>
+            </header>
         )
     }
 }
