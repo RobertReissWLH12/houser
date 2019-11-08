@@ -52,7 +52,7 @@ input {
     font-size: 20px;
 }
 
-.stateZip {
+.cityStateZip {
     display: flex;
     justify-content: space-between;
 }
