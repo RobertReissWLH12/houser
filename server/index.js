@@ -1,5 +1,6 @@
 require('dotenv').config();
 const express = require('express');
+// const session = require('express-session')
 controller = require('./controller')
 const massive = require('massive')
 const {SERVER_PORT, CONNECTION_STRING} = process.env;
@@ -17,10 +18,10 @@ massive(CONNECTION_STRING)
 
 
 // ENDPOINTS
-app.get('/api/houses', controller.getHouses)
-// app.post('/api/****', controller.whatever)
-// app.put('/api/****', controller.whatever)
-// app.delete('/api/****', controller.whatever)
+app.get("/api/houses", controller.getHouses)
+// app.post('/api/houses', controller.addHouse)
+// app.put('/api/houses', controller.whatever)
+// app.delete('/api/houses', controller.deleteHouse)
 
 app.listen(SERVER_PORT, () =>
     console.log(`I am fluent in over ${SERVER_PORT} forms of communication...`))
