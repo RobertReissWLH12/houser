@@ -10,6 +10,8 @@ export default class Dashboard extends Component {
         this.state = {
             houses: []
         }
+
+        this.getHouses = this.getHouses.bind(this)
     }
 
     componentDidMount() {
