@@ -19,7 +19,7 @@ massive(CONNECTION_STRING)
 
 // ENDPOINTS
 app.get('/api/houses', controller.getHouses)
-// app.post('/api/houses', controller.addHouse)
+app.post('/api/houses', controller.addHouse)
 // app.put('/api/houses', controller.whatever)
 // app.delete('/api/houses', controller.deleteHouse)
 

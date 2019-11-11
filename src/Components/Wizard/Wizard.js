@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Switch, Route, Link } from "react-router-dom";
 import StepOne from "../StepOne"
-// import StepTwo from "../StepTwo"
-// import StepThree from "../StepThree"
-// import { clearStore } from "../../ducks/store";
+import StepTwo from "../StepTwo"
+import StepThree from "../StepThree"
+import { clearStore } from "../../ducks/store";
 
 export default class Wizard extends Component {
     constructor() {
@@ -19,8 +19,8 @@ export default class Wizard extends Component {
                 <div className="wizardHeader">
                     <h1>Add New Home</h1>
                     <Link className="cancelLink" to="/">
-                        <button className="cancelButton" 
-                        // onClick={() => clearStore()}
+                        <button className="cancelButton"
+                        onClick={() => clearStore()}
                         >
                             Cancel
                     </button>
@@ -28,8 +28,8 @@ export default class Wizard extends Component {
                 </div>
                 <Switch className="wizardBody">
                     <Route component={StepOne} path="/wizard/step1" />
-                    {/* <Route component={StepTwo} path="/wizard/step2" />
-                    <Route component={StepThree} path="/wizard/step3" /> */}
+                    <Route component={StepTwo} path="/wizard/step2" />
+                    <Route component={StepThree} path="/wizard/step3" />
                 </Switch>
             </div>
         )
