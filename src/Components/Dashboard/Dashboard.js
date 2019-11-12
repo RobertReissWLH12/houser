@@ -45,20 +45,20 @@ export default class Dashboard extends Component {
                 </Link>
                 </div>
                 <h3>Home Listings</h3>
-                {this.state.houses.map((e, i) => {
+                {this.state.houses.map((house, i) => {
                     return(
                         <House
                         deleteHouse={this.deleteHouse}
                         key={`housekey${i}`}
-                        id={e.id}
-                        name={e.name}
-                        city={e.city}
-                        address={e.address}
-                        img={e.img}
-                        mortgage={e.mortgage}
-                        rent={e.rent}
-                        state={e.state}
-                        zip={e.zip}
+                        id={house.id}
+                        name={house.name}
+                        address={house.address}
+                        city={house.city}
+                        state={house.state}
+                        zip={house.zip}
+                        img={house.img}
+                        mortgage={house.mortgage}
+                        rent={house.rent}
                         />
                     )
                 })}

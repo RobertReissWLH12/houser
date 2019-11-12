@@ -1,4 +1,4 @@
-import axios from "axios"
+// import axios from "axios"
 
 const initialState = {
     name: "",
@@ -19,7 +19,7 @@ const STEP_ONE = "STEP_ONE"
 
 
 function myReducer(state = initialState, action) {
-    let { type, payload } = action
+    // let { type, payload } = action
     switch (action.type) {
         case UPDATE:
             return { ...state, ...action.payload };

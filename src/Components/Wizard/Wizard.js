@@ -4,7 +4,7 @@ import StepOne from "../StepOne"
 import StepTwo from "../StepTwo"
 import StepThree from "../StepThree"
 import { clearStore } from "../../ducks/reducer";
-import {connect} from "react-redux"
+// import {connect} from "react-redux"
 
 class Wizard extends Component {
     constructor() {
