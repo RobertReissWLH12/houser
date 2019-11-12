@@ -22,5 +22,9 @@ module.exports = {
         db.delete_house(id).then(() => {
             res.sendStatus(200);
         })
+        .catch(err => {
+            console.log(err)
+            res.status(500).send(err)
+        })
     }
 }
