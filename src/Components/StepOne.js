@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import { updateStore } from "../ducks/store";
+import { updateStore } from "../ducks/reducer";
 import "../Components/Wizard/Wizard.css"
 
 class StepOne extends Component {
@@ -82,8 +82,5 @@ const mapStateToProps = reduxState => {
     }
 }
 
-const mapDispatchToProps = {
-    updateStore
-}
 
-export default connect(mapStateToProps, mapDispatchToProps)(StepOne)
+export default connect(mapStateToProps, {updateStore})(StepOne)

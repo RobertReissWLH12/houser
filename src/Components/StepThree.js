@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 import {Link} from "react-router-dom"
 import {connect} from "react-redux"
-import {updateStore} from "../ducks/store"
+import {updateStore} from "../ducks/reducer"
 import axios from "axios"
 import "../Components/Wizard/Wizard.css"
 
@@ -81,11 +81,7 @@ const mapStateToProps = reduxState => {
     }
 }
 
-const mapDispatchToProps = {
-    updateStore
-}
-
 export default connect(
     mapStateToProps,
-    mapDispatchToProps
+    {updateStore}
 )(StepThree)

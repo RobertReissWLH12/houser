@@ -3,9 +3,10 @@ import { Switch, Route, Link } from "react-router-dom";
 import StepOne from "../StepOne"
 import StepTwo from "../StepTwo"
 import StepThree from "../StepThree"
-import { clearStore } from "../../ducks/store";
+import { clearStore } from "../../ducks/reducer";
+import {connect} from "react-redux"
 
-export default class Wizard extends Component {
+class Wizard extends Component {
     constructor() {
         super()
         this.state = {
@@ -35,3 +36,5 @@ export default class Wizard extends Component {
         )
     }
 }
+
+export default Wizard
